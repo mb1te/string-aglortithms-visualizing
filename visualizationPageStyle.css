@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 body {
 	font: 100% Verdana, Arial, Helvetica, sans-serif;
 	/*background: #666666; */
@@ -10,24 +9,16 @@ body {
 	color: #000000;
 }
 
-
-
-
 .VisualizationMainPage #mainContent {
 	/*padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 	background: #FFFFFF;
 }
 
-
-
 .VisualizationMainPage #container {
-
-
 	background: #FFFFFF;
 	/*margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	text-align: left; /* this overrides the text-align: center on the body element. */
 }
-
 
 .VisualizationMainPage #algoControlSection
 {
@@ -35,7 +26,6 @@ body {
 	color:#000000;
 
 }
-
 
 .VisualizationMainPage #generalAnimationControlSection
 {
@@ -51,29 +41,27 @@ body {
 
 }
 
-.VisualizationMainPage #header  A:visited
-	  { text-decoration:none;
-        color:#ffCC33;
-	   }
+.VisualizationMainPage #header  A:visited{
+	text-decoration:none;
+	color:#ffCC33;
+}
 
 
 .VisualizationMainPage #header h1 {
 	margin: 0;
 	padding: 10px 0;
-	}
+}
 
 .VisualizationMainPage #header A:link {
     text-decoration:none;
     color:#ffCC33;
-	}
-
+}
 
 .VisualizationMainPage #container {
 	background: #FFFFFF;
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	text-align: left; /* this overrides the text-align: center on the body element. */
 }
-
 
 .VisualizationMainPage #footer  A:visited { text-decoration:none;
         color:ffcc33;
@@ -83,9 +71,6 @@ body {
     text-decoration:none;
 	color:#ffCC33;
 }
-
-
-
 
 .VisualizationMainPage #mainContent h1{
 	padding: 0 20px;
@@ -105,8 +90,6 @@ body {
 	color:#006633
 }
 
-
-
 .VisualizationMainPage #footer {
 	padding: 0 10px;
     background: #006633;
@@ -117,5 +100,3 @@ body {
 }
 
 EM {text-decoration: bold;}
-
-
