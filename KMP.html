@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Knuth-Morris-Pratt String Search Visualization
+		</title>
+
+		<link rel="stylesheet" href="visualizationPageStyle.css">
+
+
+		<link rel="stylesheet" href="assets/jquery-ui-1.8.11.custom.css">
+		<script src="assets/jquery-1.5.2.min.js"></script>
+		<script src="assets/jquery-ui-1.8.11.custom.min.js"></script>
+
+        <script src="js/animation/UndoFunctions.js"></script>
+        <script src="js/animation/AnimatedObject.js"></script>
+        <script src="js/animation/AnimatedBTreeNode.js"></script>
+        <script src="js/animation/AnimatedCircle.js"></script>
+        <script src="js/animation/AnimatedLabel.js"></script>
+        <script src="js/animation/AnimatedRectangle.js"></script>
+        <script src="js/animation/ObjectManager.js"></script>
+        <script src="js/animation/CustomEvents.js"></script>
+        <script src="js/animation/AnimationMain.js"></script>
+        
+        
+        <script src="js/algo/Algorithm.js"></script>
+        <script src="js/algo/KMP.js"></script>
+     </head>
+
+     <body onload="init();" class="VisualizationMainPage">
+
+		<div id = "container">
+
+			<div id="header">
+				<h1>Knuth-Morris-Pratt String Search</h1>
+			</div>
+
+			<div  id = "mainContent">
+
+				<div id = "algoControlSection">
+					<!-- Table for buttons to control specific animation (insert/find/etc) -->
+					<!-- (filled in by javascript code specific to the animtion) -->
+					<table id="AlgorithmSpecificControls"> </table>
+				</div>
+
+					<!-- Drawing canvas where all animation is done.  Note:  can be resized in code -->
+
+				<canvas id="canvas" width="1000" height="500"></canvas>
+
+				<div id = "generalAnimationControlSection">
+					<!-- Table for buttons to control general animation (play/pause/undo/etc) ->
+					<!-- (filled in by javascript code, specifically AnimationMain.js)  -->
+
+					<table id="GeneralAnimationControls">  </table>
+				</div>
+
+			</div> <!-- mainContent -->
+		</div><!-- container -->
+	</body>
+</html>
