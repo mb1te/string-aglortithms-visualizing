@@ -23,7 +23,7 @@ class AnimatedCircle extends AnimatedObject {
         super();
         this.objectID = objectID;
         this.label = objectLabel;
-        this.radius = 20;
+        this.radius = 30;
         this.thickness = 3;
         this.x = 0;
         this.y = 0;
@@ -64,7 +64,6 @@ class AnimatedCircle extends AnimatedObject {
             ctx.fill();
         }
         
-        
         ctx.fillStyle = this.backgroundColor;
         ctx.strokeStyle = this.foregroundColor;
         ctx.lineWidth = 1;
@@ -74,7 +73,7 @@ class AnimatedCircle extends AnimatedObject {
         ctx.fill();
         ctx.stroke();
         ctx.textAlign = 'center';
-        ctx.font         = '10px sans-serif';
+        ctx.font = '24px sans-serif';
         ctx.textBaseline   = 'middle'; 
         ctx.lineWidth = 1;
         ctx.fillStyle = this.foregroundColor;
