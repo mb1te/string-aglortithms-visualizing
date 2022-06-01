@@ -5,7 +5,7 @@ class KMP extends Algorithm {
         
         this.MARGIN_X = 40;
         this.MARGIN_Y = 120;
-        this.COUNTER_BUILD_LABEL_X = 20;
+        this.COUNTER_BUILD_LABEL_X  = 20;
         this.COUNTER_BUILD_LABEL_Y = 20;
         this.COUNTER_SEARCH_LABEL_X = 20;
         this.COUNTER_SEARCH_LABEL_Y = 40;

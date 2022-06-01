@@ -4,15 +4,15 @@ class BM extends Algorithm {
 
         this.init(am, w, h);
         this.MARGIN_X = 40;
-        this.MARGIN_Y = 100;
+        this.MARGIN_Y = 120;
         this.LAST_LABEL_X = 20;
         this.LAST_LABEL_Y = 20;
         this.COUNTER_LABEL_X = 20;
         this.COUNTER_LABEL_Y = 40;
         this.STATUS_LABEL_X = 20;
         this.STATUS_LABEL_Y = 60;
-        this.BOX_WIDTH = 30;
-        this.BOX_HEIGHT = 30;
+        this.BOX_WIDTH = 60;
+        this.BOX_HEIGHT = 60;
         this.ROW_SPACING = 20;
         
         this.NORMAL_FG_COLOR = "#000";

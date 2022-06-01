@@ -8,10 +8,10 @@ class Trie extends Algorithm {
         this.init(am, w, h);
         this.MARGIN_X = 40;
         this.MARGIN_Y = 40;
-        this.STATUS_LABEL_X = 20;
-        this.STATUS_LABEL_Y = 20;
-        this.NODE_WIDTH = 25;
-        this.NODE_HEIGHT = 25;
+        this.STATUS_LABEL_X = 40;
+        this.STATUS_LABEL_Y = 40;
+        this.NODE_WIDTH = 60;
+        this.NODE_HEIGHT = 60;
         this.NODE_SPACING_X = 30;
         this.NODE_SPACING_Y = 35;
 
