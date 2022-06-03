@@ -1,5 +1,7 @@
 class UndoDeleteCircle extends UndoBlock {
     constructor(id, lab, x, y, foregroundColor, backgroundColor, l) {
+        super();
+
         this.objectID = id;
         this.posX = x;
         this.posY = y;

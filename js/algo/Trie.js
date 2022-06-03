@@ -293,7 +293,7 @@ class Trie extends Algorithm {
         this.cmd("SetHighlight", node.id, 1);
 
         for (let i = 0; i < key.length; ++i) {
-            ch = key[i];
+            const ch = key[i];
             child = node.children[ch];
 
             this.setStatus("Looking for child '" + ch + "'.");
