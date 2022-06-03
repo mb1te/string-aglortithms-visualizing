@@ -260,7 +260,7 @@ class ObjectManager {
 			let len = this.Edges[objectIDfrom].length;
 			for (let i = len - 1; i >= 0; i--) {
 				if (this.Edges[objectIDfrom][i] != null && this.Edges[objectIDfrom][i].Node2 == this.Nodes[objectIDto]) {
-					let deleted = this.Edges[objectIDfrom][i];
+					const deleted = this.Edges[objectIDfrom][i];
 					undo = deleted.createUndoDisconnect();
 					this.Edges[objectIDfrom][i] = this.Edges[objectIDfrom][len - 1];
 					len -= 1;
@@ -269,10 +269,9 @@ class ObjectManager {
 			}
 		}
 		if (this.BackEdges[objectIDto] != null) {
-			len = this.BackEdges[objectIDto].length;
+			let len = this.BackEdges[objectIDto].length;
 			for (let i = len - 1; i >= 0; i--) {
 				if (this.BackEdges[objectIDto][i] != null && this.BackEdges[objectIDto][i].Node1 == this.Nodes[objectIDfrom]) {
-					deleted = this.BackEdges[objectIDto][i];
 					this.BackEdges[objectIDto][i] = this.BackEdges[objectIDto][len - 1];
 					len -= 1;
 					this.BackEdges[objectIDto].pop();
@@ -304,13 +303,13 @@ class ObjectManager {
 			this.Edges[objectID] = null;
 		}
 		if (this.BackEdges[objectID] != null) {
-			len = this.BackEdges[objectID].length;
+			let len = this.BackEdges[objectID].length;
 			for (let i = len - 1; i >= 0; i--) {
-				deleted = this.BackEdges[objectID][i];
+				const deleted = this.BackEdges[objectID][i];
 				let node1ID = deleted.Node1.identifier();
 				undoStack.push(deleted.createUndoDisconnect());
 
-				len2 = this.Edges[node1ID].length;
+				let len2 = this.Edges[node1ID].length;
 				for (let j = len2 - 1; j >=0; j--) {
 					if (this.Edges[node1ID][j] == deleted) {
 						this.Edges[node1ID][j] = this.Edges[node1ID][len2 - 1];
