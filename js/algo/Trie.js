@@ -5,7 +5,6 @@ function ordCompare(char1, char2) {
 class Trie extends Algorithm {
     constructor(am, w, h) {
         super();
-        this.init(am, w, h);
         this.MARGIN_X = 40;
         this.MARGIN_Y = 40;
         this.STATUS_LABEL_X = 40;
@@ -17,6 +16,8 @@ class Trie extends Algorithm {
 
         this.NORMAL_FG_COLOR = "#000";
         this.EOW_FG_COLOR = "#00f";
+
+        this.init(am, w, h);
     }
 
     init(am, w, h) {
