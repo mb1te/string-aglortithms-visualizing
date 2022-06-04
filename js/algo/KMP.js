@@ -1,7 +1,6 @@
 class KMP extends Algorithm {
     constructor(am, w, h) {
         super(am);
-        this.init(am, w, h);
         
         this.MARGIN_X = 40;
         this.MARGIN_Y = 120;
@@ -18,6 +17,8 @@ class KMP extends Algorithm {
         this.LEFT_LABEL_MARGIN = this.BOX_WIDTH;
         this.NORMAL_FG_COLOR = "#000";
         this.ACTIVE_FG_COLOR = "#f00";
+
+        this.init(am, w, h);
     }
 
     init(am, w, h) {

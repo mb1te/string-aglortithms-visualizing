@@ -5,18 +5,19 @@ function ordCompare(char1, char2) {
 class Trie extends Algorithm {
     constructor(am, w, h) {
         super();
-        this.init(am, w, h);
-        this.MARGIN_X = 40;
-        this.MARGIN_Y = 40;
-        this.STATUS_LABEL_X = 40;
-        this.STATUS_LABEL_Y = 40;
-        this.NODE_WIDTH = 60;
-        this.NODE_HEIGHT = 60;
-        this.NODE_SPACING_X = 30;
-        this.NODE_SPACING_Y = 35;
+        this.MARGIN_X = 10;
+        this.MARGIN_Y = 10;
+        this.STATUS_LABEL_X = 100;
+        this.STATUS_LABEL_Y = 100;
+        this.NODE_WIDTH = 30;
+        this.NODE_HEIGHT = 30;
+        this.NODE_SPACING_X = 10;
+        this.NODE_SPACING_Y = 10;
 
         this.NORMAL_FG_COLOR = "#000";
         this.EOW_FG_COLOR = "#00f";
+
+        this.init(am, w, h);
     }
 
     init(am, w, h) {
@@ -66,6 +67,8 @@ class Trie extends Algorithm {
         this.clearHistory();
 
         this.commands = [];
+
+        console.log('trie: ', this.STATUS_LABEL_X, this.STATUS_LABEL_Y);
 
         this.statusId = this.newId();
         this.cmd("CreateLabel", this.statusId, "Ready.", this.STATUS_LABEL_X, this.STATUS_LABEL_Y, 0);

@@ -2,7 +2,6 @@ class BM extends Algorithm {
     constructor(am, w, h) {
         super(am);
 
-        this.init(am, w, h);
         this.MARGIN_X = 40;
         this.MARGIN_Y = 120;
         this.LAST_LABEL_X = 20;
@@ -14,9 +13,10 @@ class BM extends Algorithm {
         this.BOX_WIDTH = 60;
         this.BOX_HEIGHT = 60;
         this.ROW_SPACING = 20;
-        
         this.NORMAL_FG_COLOR = "#000";
         this.ACTIVE_FG_COLOR = "#f00";
+
+        this.init(am, w, h);
     }
 
     init(am, w, h) {

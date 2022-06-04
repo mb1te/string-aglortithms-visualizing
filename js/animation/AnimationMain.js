@@ -362,7 +362,7 @@ class AnimationManager extends EventListener {
 			setCookie("VisualizationHeight", String(height), 30);
 		}
 
-		width.value = canvas.width;
+		widthEntry.value = canvas.width;
 		heightEntry.value = canvas.height;
 		
 		this.animatedObjects.draw();
